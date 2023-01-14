@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* ------- Navigation bar Start------ */
 .nav-section {
   margin: 50px 120px;
 }
@@ -25,22 +25,43 @@ body {
   margin-right: 34px;
   list-style: none;
   font-size: 16px;
+  font-weight: 700;
 }
-.nav h2 {
+
+  a{
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+  }
+  .nav ul li a:hover {
+    color: red;
+    cursor: pointer;
+  }
+  .nav i:hover {
+    color: red;
+    cursor: pointer;
+  }
+.nav h1 {
   font-size: 24px;
   font-weight: 700;
 }
+.nav h1 a:hover{
+    border-bottom: 1px solid blue;
+    cursor: pointer;
+    color: red;
+}
+
 .cart-icon-2 i {
   font-size: 20px;
 }
-/*--------first-article---------*/
+/*--------first-article Start---------*/
 .first-article {
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .camera {
-  margin-right: 225px;
   max-height: 414px;
   max-width: 440px;
   border: 1px solid rgba(138, 136, 136, 0.561);
@@ -71,8 +92,9 @@ body {
   border: none;
   color: white;
 }
+/* -------- logo start ----------- */
 .logos {
-  width: 1110px;
+  max-width: 1110px;
   margin: 100px auto;
   padding: 35px 62px;
   display: flex;
@@ -83,22 +105,21 @@ body {
   width: 84px;
   height: 28.26px;
 }
-/* .popular-collection{
-    margin: 0 196px;
-    border: 1px solid black;
 
-} */
 .popular-collection > h1 {
   text-align: center;
   margin-bottom: 30px;
   font-size: 28px;
   font-weight: 600;
 }
+/*--------- product -------- */
 .product-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  margin: 0px 230px;
+max-width: 1050px;
+margin: 0 auto;
+padding: 0 20px;
 }
 .product-box {
   max-width: 301px;
@@ -130,8 +151,8 @@ body {
 }
 .product-box h3 i {
   color: #fb8200;
-  font-size: 14px;
-  padding-left: 4px;
+  font-size: 12px;
+  padding-left: 2px;
 }
 .product-box h3 i:first-child {
   padding-left: 0;
@@ -139,4 +160,225 @@ body {
 
 .product-box h3 .rating {
   margin-left: 10px;
+}
+/* ------- Article Start --------- */
+.main-article {
+  max-width: 1110px;
+  margin: 98px auto 0px auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.main-article .box-1 {
+  max-width: 404px;
+  max-height: 270px;
+}
+.box-1 img {
+  width: 100%;
+}
+.box-2 {
+  max-width: 610px;
+  padding: 0 15px;
+}
+.box-2 h1 {
+  font-weight: 700;
+  font-size: 38px;
+  margin: 25px 0;
+}
+.box-2 p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+}
+.box-2 button {
+  background-color: #e02c6d;
+  color: white;
+  padding: 6px 15px;
+  border: none;
+  margin-top: 20px;
+}
+/* ------- Footer Start------ */
+.footer {
+  margin-top: 106px;
+  background-color: rgba(17, 26, 29, 0.993);
+  padding: 50px 0;
+}
+.footer section {
+  height: 140px;
+  width: auto;
+  margin: 0px auto;
+  text-align: center;
+  color: white;
+}
+.footer h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.footer h3 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.footer h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  padding-bottom: 17px;
+}
+.footer p i {
+  padding-left: 20px;
+  transition: 0.5s;
+}
+.footer p i:hover {
+  color: rgb(39, 39, 188);
+}
+.footer p i:first-child {
+  padding-left: 0px;
+}
+
+
+
+/* ---------------- Responsive screen (max-width:992px)----------------- */
+@media screen and (min-width:577px) and (max-width:992px) {
+    
+    /*---------------- first-article start ---------- */
+     .first-article {
+      flex-direction: column-reverse;
+      padding: 10px;
+      padding: 30px;
+    }
+    .camera {
+      margin-right: 0px;
+     
+    }
+    .start-journey {
+      left: 0px;
+      height: auto;
+      width: auto;
+    }
+ .start-journey h1 { 
+      font-size: 32px;
+      text-align: start;
+      line-height: 40px;
+      font-weight: 400;
+    } 
+    /* -------- logo start ----------- */
+    .logos {
+      width: 100%;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    .logos img {
+      height: 14px;
+      padding: 10px;
+    }
+  
+    /*------------ product-Box-Start ----------- */
+  
+    .popular-collection > h1 {
+      font-size: 22px;
+      font-weight: 400;
+    }
+    .product-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    } 
+  
+    /* ------- Article Start --------- */
+  
+    .main-article {
+      margin: 50px 10px;
+    }
+    
+    .box-2 h1 {
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0px 0;
+      padding-top: 0;
+    }
+    .box-2 p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    .footer {
+      margin-top: 0px;
+    }
+  }
+
+
+
+/* ---------------- Responsive screen (max-width:576px)----------------- */
+@media screen and (max-width: 576px) {
+  .nav ul {
+    display: none;
+  }
+  /*---------------- first-article start ---------- */
+  .first-article {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .camera {
+    margin-right: 0px;
+    width: 100%;
+  }
+  .start-journey {
+    left: 0px;
+    height: auto;
+    width: auto;
+  }
+  .start-journey h1 {
+    font-size: 32px;
+    text-align: start;
+    line-height: 40px;
+    font-weight: 400;
+  }
+  /* -------- logo start ----------- */
+  .logos {
+    width: 100%;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .logos img {
+    width: 576px;
+    height: 14px;
+    padding: 10px;
+  }
+
+  /*------------ product-Box-Start ----------- */
+
+  .popular-collection > h1 {
+    font-size: 22px;
+    font-weight: 400;
+  }
+  .product-section {
+    display: grid;
+    grid-template-columns: 1fr;
+
+  }
+
+  /* ------- Article Start --------- */
+
+  .main-article {
+    margin: 50px 10px;
+    flex-direction: column;
+  }
+  .main-article .box-1 {
+  margin-left:10px;
+}
+  .box-2 h1 {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 15px 0;
+  }
+  .box-2 p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .footer {
+    margin-top: 0px;
+  }
 }
