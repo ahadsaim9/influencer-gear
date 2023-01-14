@@ -9,11 +9,135 @@ body {
 }
 
 .nav-section {
+  margin: 50px 120px;
+}
+.nav {
+  align-items: center;
+  display: flex;
+  margin-left: 10px;
+  justify-content: space-between;
+}
+.nav ul {
+  align-items: center;
+  display: flex;
+}
+.nav ul li {
+  margin-right: 34px;
+  list-style: none;
+  font-size: 16px;
+}
+.nav h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+.cart-icon-2 i {
+  font-size: 20px;
+}
+/*--------first-article---------*/
+.first-article {
   display: flex;
   justify-content: space-between;
 }
-.nav {
-  display: flex;
 
-  margin-left: 10px;
+.camera {
+  margin-right: 225px;
+  max-height: 414px;
+  max-width: 440px;
+  border: 1px solid rgba(138, 136, 136, 0.561);
+  border-radius: 50%;
+  padding: 10px;
+}
+.camera img {
+  width: 100%;
+}
+.start-journey {
+  margin-top: 80px;
+  height: 270px;
+  width: 582px;
+  position: relative;
+  left: 120px;
+}
+.start-journey h1 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 70px;
+  color: #3a3a3a;
+}
+.start-journey button {
+  padding: 7px 20px;
+  background: #e02c6d;
+  border-radius: 41px;
+  margin-top: 16px;
+  border: none;
+  color: white;
+}
+.logos {
+  width: 1110px;
+  margin: 100px auto;
+  padding: 35px 62px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #d6d2d238;
+}
+.logos img {
+  width: 84px;
+  height: 28.26px;
+}
+/* .popular-collection{
+    margin: 0 196px;
+    border: 1px solid black;
+
+} */
+.popular-collection > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.product-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 0px 230px;
+}
+.product-box {
+  max-width: 301px;
+  background-color: #ffff;
+  margin: 17px auto;
+  padding: 15px;
+  box-shadow: 5px 5px 40px grey;
+  border-radius: 5px
+  ;
+}
+
+.product-box img {
+  width: 100%;
+}
+.product-box h1 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 40px;
+}
+.product-box h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+.product-box p{
+    font-weight: 700;
+font-size: 14px;
+line-height: 143%;
+letter-spacing: .1px;
+}
+.product-box h3 i{
+    color: #FB8200;
+    font-size: 14px;
+    padding-left:4px;
+}
+.product-box h3 i:first-child{
+    padding-left: 0;
+}
+
+.product-box h3 .rating{
+    margin-left: 10px;
 }
